@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDripNoteLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDripNote"
+        android:layout_marginStart="@dimen/_96sdp"
+        android:layout_marginEnd="@dimen/_96sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/icon_dripnote"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDripNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_45sdp"
+        android:fontFamily="@font/niveau_grotesk_black"
+        android:text="@string/text_drip_note"
+        android:textAlignment="center"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/colorCornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDripNoteLogo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDripNoteDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDripNote"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:lines="2"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15sdp"
+        app:lineHeight="@dimen/_20sdp"
+        android:text="@string/text_dripnote_description"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@id/tvDripNoteDescription"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/button_text_sign_up"
+        android:shadowColor="@color/black"
+        android:fontFamily="@font/merriweather_black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnForgotPassword"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/button_text_log_in"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/merriweather_black"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:textColor="@color/colorCornflower"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/button_text_forgot_password"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/merriweather_black"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:textColor="@color/colorGrey"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
